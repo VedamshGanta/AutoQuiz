@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin1",
+    "password": "L0G1nT0th3$3Rv3R",  
+    "database": "quizapp-db",
+    "host": "quizapp-db.cluster-c4zqyi4qa7p5.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "admin1",
+    "password": "L0G1nT0th3$3Rv3R",  
+    "database": "database_test",
+    "host": "quizapp-db.cluster-c4zqyi4qa7p5.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "admin1",
+    "password": "L0G1nT0th3$3Rv3R", 
+    "database": "quizapp-db",
+    "host": "quizapp-db.cluster-c4zqyi4qa7p5.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
