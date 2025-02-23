@@ -2,51 +2,51 @@
   {
     "question": "Who is the founder of Project for Public Spaces?",
     "choices": [
-      "Fred Kent",
       "Jane Jacobs",
       "William H. Whyte",
+      "Fred Kent",
       "Jan Gehl"
     ],
-    "correct_answer": "Fred Kent"
+    "correctAnswer": 2
   },
   {
-    "question": "When was Project for Public Spaces founded?",
+    "question": "Where is the headquarters of Project for Public Spaces located?",
     "choices": [
-      "1975",
+      "New York City",
+      "Chicago",
+      "San Francisco",
+      "Boston"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What year was Project for Public Spaces founded?",
+    "choices": [
+      "1970",
       "1980",
       "1990",
       "2000"
     ],
-    "correct_answer": "1975"
+    "correctAnswer": -1
   },
   {
-    "question": "Which of the following is NOT a principle of Placemaking according to Project for Public Spaces?",
+    "question": "What is the main focus of Project for Public Spaces?",
     "choices": [
-      "Community Collaboration",
-      "Incremental Change",
-      "Mixed-Use Development",
-      "Single-Use Zoning"
+      "Environmental Conservation",
+      "Urban Design",
+      "Public Health",
+      "Education"
     ],
-    "correct_answer": "Single-Use Zoning"
+    "correctAnswer": 1
   },
   {
-    "question": "What is the main goal of Project for Public Spaces?",
+    "question": "Which of the following is NOT a key principle of Project for Public Spaces?",
     "choices": [
-      "Promote Private Spaces",
-      "Advocate for Car-Centric Cities",
-      "Create Vibrant Public Places",
-      "Increase Urban Sprawl"
+      "Community Engagement",
+      "Placemaking",
+      "Car-Centric Design",
+      "Activation of Public Spaces"
     ],
-    "correct_answer": "Create Vibrant Public Places"
-  },
-  {
-    "question": "Which city is NOT known for successful Placemaking projects inspired by Project for Public Spaces?",
-    "choices": [
-      "New York City",
-      "Portland",
-      "Paris",
-      "Los Angeles"
-    ],
-    "correct_answer": "Los Angeles"
+    "correctAnswer": 2
   }
 ]

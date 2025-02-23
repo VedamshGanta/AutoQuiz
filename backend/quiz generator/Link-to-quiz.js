@@ -21,7 +21,13 @@ try {
 function extractJson(responseText) {
     try {
         const cleanedText = responseText.replace(/```json|```/g, '').trim();
-        return JSON.parse(cleanedText);
+        const rawData = JSON.parse(cleanedText);
+
+        return rawData.map(item => ({
+            question: item.question,
+            choices: item.choices,
+            correctAnswer: item.choices.indexOf(item.correct_answer) // Ensuring correctAnswer is an index
+        }));
     } catch (error) {
         console.error("Failed to parse JSON:", error.message);
         console.error("Response received:", responseText);
