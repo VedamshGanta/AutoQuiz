@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Scroll to Bottom Popup",
+    "version": "1.0",
+    "description": "Shows a popup when you scroll to the bottom of the webpage.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
