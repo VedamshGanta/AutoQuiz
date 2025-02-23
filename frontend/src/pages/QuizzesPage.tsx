@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import QuizItem from './QuizItem';
+import QuizItem from '../components/QuizItem';
 
 interface Quiz {
   id: number;
