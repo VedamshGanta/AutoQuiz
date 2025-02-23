@@ -3,6 +3,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const path = require('path');
 
+const linkFilePath = "C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\quiz generator\\link.txt";
+const outputDir = "C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\quiz generator\\scraped text";
+
 async function scrapeAndSave(url) {
     try {
         const response = await axios.get(url);
@@ -16,6 +19,7 @@ async function scrapeAndSave(url) {
 
         // Clean up title to make it a safe filename
         title = title.replace(/[<>:"/\\|?*]+/g, '').substring(0, 50); // Remove invalid characters and limit length
+        title += "_text"; // Append "_text" to the filename
 
         // Extract main content
         let textContent = [];
@@ -33,7 +37,7 @@ async function scrapeAndSave(url) {
         }
 
         // Define file path using the article title
-        const filePath = path.join('C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\txt_extract\\scraped text', `${title}.txt`);
+        const filePath = path.join(outputDir, `${title}.txt`);
 
         // Save to file
         fs.writeFileSync(filePath, cleanedText);
@@ -44,7 +48,6 @@ async function scrapeAndSave(url) {
 }
 
 // Read URL from link.txt
-const linkFilePath = 'C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\txt_extract\\link.txt';
 fs.readFile(linkFilePath, 'utf-8', (err, url) => {
     if (err) {
         console.error('Error reading link file:', err.message);

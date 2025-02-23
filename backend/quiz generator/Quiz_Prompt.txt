@@ -1,0 +1,8 @@
+Take the provided text and generate a 10-question quiz that assesses high-level comprehension of the material. The quiz should:
+
+Cover key concepts, themes, and major points from the text.
+Include a mix of question types (multiple choice, true/false, and short answer).
+Avoid overly detailed or niche questions—focus on broad understanding.
+Ensure questions are clear, concise, and unambiguous.
+Provide answer choices where applicable, ensuring they are plausible but distinguishable.
+Output the quiz in a structured format, with questions numbered and answers provided separately at the end. 

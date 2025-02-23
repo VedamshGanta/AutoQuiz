@@ -4,9 +4,9 @@ const axios = require("axios");
 const { getSubtitles } = require("youtube-captions-scraper");
 
 // Define file paths
-const basePath = "C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\vid_extract";
-const videoLinkPath = path.join(basePath, "videolink.txt");
-const scriptsFolderPath = path.join(basePath, "scripts");
+const basePath = "C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\quiz generator\\vid_extract";
+const videoLinkPath =  "C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\quiz generator\\link.txt";
+const scriptsFolderPath = "C:\\Users\\dijib\\OneDrive\\Documents\\GitHub\\AutoQuiz\\backend\\quiz generator\\scraped text";
 
 // Ensure the scripts directory exists
 if (!fs.existsSync(scriptsFolderPath)) {
